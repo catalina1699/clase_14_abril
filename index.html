@@ -228,10 +228,8 @@
 ];
                 function setup() {
             createCanvas(windowWidth, windowHeight)
-                    .position(0,0)
-                    .style("z-index", -1)
-                    .style("position", "fixed");
-             
+                    
+            
                     var donde = select(".row-cols-1");
 i.forEach((datos) =>{
     createElement('div','<div class="card shadow-sm"><img src="https://picsum.photos/id/'+datos.id+'/600/400.webp" class="card-img-top"><div class="card-body"><p class="card-text">'+datos.texto+'</p><div class="d-flex justify-content-between align-items-center"><button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#probandoModalUno">El primero</button><small class="text-muted">9 mins</small></div></div></div>').class('col').parent(donde);
