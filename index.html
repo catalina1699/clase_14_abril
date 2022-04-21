@@ -218,11 +218,7 @@
                     crossorigin="anonymous"
                     referrerpolicy="no-referrer"
                 >
-        var i = [
-{ id: 4, texto: "Este texto irá debajo de la imagen que en picsum tiene id 4." },
-{ id: 5, texto: "Este texto irá debajo de la imagen que en picsum tiene id 5." },
-{ id: 6, texto: "Este texto irá debajo de la imagen que en picsum tiene id 6." }
-];
+
         </script>
                 <script>
                     var i = [
@@ -235,19 +231,12 @@
                     .position(0,0)
                     .style("z-index", -1)
                     .style("position", "fixed");
-                    noStroke;
-            }
+             
                     var donde = select(".row-cols-1");
 i.forEach((datos) =>{
     createElement('div','<div class="card shadow-sm"><img src="https://picsum.photos/id/'+datos.id+'/600/400.webp" class="card-img-top"><div class="card-body"><p class="card-text">'+datos.texto+'</p><div class="d-flex justify-content-between align-items-center"><button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#probandoModalUno">El primero</button><small class="text-muted">9 mins</small></div></div></div>').class('col').parent(donde);
 });
-            function draw() {
-                background(225);
-                textSize(40)
-                text ("n", mouseX , MouseY)
-                fill(55)
-                ellipse(mouseX+22, mouseY+11, 40, 51);
-            }
+           
             function windowResized() {
                 resizeCanvas(windowWidth-50, windowHeight-50);
                 </script>
